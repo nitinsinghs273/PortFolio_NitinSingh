@@ -255,7 +255,8 @@ nav .logo {
     height: 425px;
     display: block;
     transition: transform 0.5s;
-    object-fit: cover;
+
+    background-size: cover;
 
 }
 
