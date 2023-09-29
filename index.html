@@ -1,192 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/42891a49c8.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/42891a49c8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <div class="mainContainer">
-        <div class="header" id="header">
-            <div class="container">
-                <nav>
-                    <img src="./img/2.png" class="logo" alt="">
+      <div class="header" id="header">
+        <div class="container">
+          <nav>
+            <img src="./img/2.png" class="logo" alt="" />
 
-                    <ul id="Sidemenu">
-                        <li><a href="#main">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <i class="fa-solid fa-xmark" onclick="Closemenu()"></i>
-                    </ul>
-                    <i class="fa-solid fa-bars" onclick="Openmenu()"></i>
-                </nav>
-            </div>
+            <ul id="Sidemenu">
+              <li><a href="#main">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="Closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="Openmenu()"></i>
+          </nav>
         </div>
+      </div>
 
-        <div class="main" id="main">
-            <div class="header-text">
-                <h1>Hi, My Name is <span>Nitin Singh</span> <br>and I am a Passionate</h1>
-                <span id="element"></span>
-
-            </div>
-            <div class="image">
-                <img src="/img/DevelopersImg.png" alt="">
-            </div>
+      <div class="main" id="main">
+        <div class="header-text">
+          <h1>
+            Hi, My Name is <span>Nitin Singh</span> <br />and I am a Passionate
+          </h1>
+          <span id="element"></span>
         </div>
-
-        <!------------------about------->
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="./img/Nitin singh Profile image.png" alt="">
-                    </div>
-                    <div class="about-col-2">
-                        <h1>About Me</h1>
-                        <p>My name is Nitin Singh. I am from Gorakhpur, Uttar Pradesh. I have done my Schooling from
-                            Central public Acedemy, Deoria.
-                            Currently I am in my final Year of B.tech, Computer Science and Engineering of ABES
-                            Engineering College. My Hobbies include Playing Volleyball, Listening music etc. Right Now I
-                            am learing Backend of the Web development.
-                        </p>
-                        <div class="tab-tittle">
-                            <p class="tab-links active-links" id="Skills" onclick="openTab('skills', 'Skills')">Skills
-                            </p>
-                            <p class="tab-links" id="Experience" onclick="openTab('experience', 'Experience')">
-                                Experience</p>
-                            <p class="tab-links" id="Educations" onclick="openTab('educations', 'Educations')">
-                                Educations</p>
-                        </div>
-                        <div class="tab-content active-tab" id="skills">
-                            <ul>
-                                <li><span>Programming language</span><br>C/C++, javaScript, Python</li>
-                                <li><span>Technologies</span><br>HTML5, CSS, Git/GitHub, Data Science</li>
-                                <li><span>FrameWork&Library's</span><br>BootStrap, Numpy, pandas,matplotlib, Reactjs
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tab-content" id="experience">
-                            <ul>
-                                <li><span>CRP training at ABES Engineering College</span><br>(july 2023 - Aug 2023)
-                                </li>
-                                <li><span>CodeSoft.( web development intern )</span><br>(Aug 2023 - sept 2023)</li>
-
-                            </ul>
-                        </div>
-                        <div class="tab-content" id="educations">
-                            <ul>
-                                <li><span>Class Xth(CBSE) - PN National Public School</span><br>(2016)</li>
-                                <li><span>Class XII(CBSE) - Centeral Public School</span><br>(2016 - 2018)</li>
-                                <li><span>B.Tech ABES Engineering College</span><br>(2020 - 2024)
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="image">
+          <img src="./img/DevelopersImg.png" alt="" />
         </div>
-        <!----------------------------------Portfolio------------------------------>
+      </div>
 
-        <div id="portfolio">
-
-            <div class="container">
-                <h1 class="sub-title">Projects</h1>
-                <div class="project-list">
-                    <div class="project">
-                        <img src="./img/Machine-Learning.png" alt="">
-                        <div class="layer">
-                            <h3>Opinion Mining of Public Review</h3>
-                            <p>This is Machine-Learning based Project which uses the the Comment of the public and
-                                catogries them into positive, negative and neutral comment based on the subjective and
-                                polarity of the Comment.</p>
-                            <a
-                                href="https://github.com/nitinsinghs273/Opinion-Mining-of-Public-Review-using-Sentiment-Analysis"><i
-                                    class="fa-solid fa-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img src="./img/Project-2.png" alt="">
-                        <div class="layer">
-                            <h3>Space Invaders - Game</h3>
-                            <p>This is Python based project which uses Pygame Library. this is designed with simple
-                                logic in which the spacecraft can move X axis only and shoot the bullets and kill the
-                                aliens which can respawn again and again.</p>
-                            <a href="https://github.com/nitinsinghs273/Space_Invaders_Game"><i
-                                    class="fa-solid fa-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img src="./img/project-6.png" alt="">
-                        <div class="layer">
-                            <h3>Employee Management App</h3>
-                            <p>This is basic one page website which uses the Employees data into tables and which is
-                                deletable and editable.
-                                pagination is used to make sure 10 data is shown atmost at single time.
-                            </p>
-                            <a href="https://github.com/nitinsinghs273/Employee_Tabel_App2"><i
-                                    class="fa-solid fa-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <a href="https://github.com/nitinsinghs273?tab=repositories" class="btn">Explore..</a>
+      <!------------------about------->
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="./img/Nitin singh Profile image.png" alt="" />
             </div>
+            <div class="about-col-2">
+              <h1>About Me</h1>
+              <p>
+                My name is Nitin Singh. I am from Gorakhpur, Uttar Pradesh. I
+                have done my Schooling from Central public Acedemy, Deoria.
+                Currently I am in my final Year of B.tech, Computer Science and
+                Engineering of ABES Engineering College. My Hobbies include
+                Playing Volleyball, Listening music etc. Right Now I am learing
+                Backend of the Web development.
+              </p>
+              <div class="tab-tittle">
+                <p
+                  class="tab-links active-links"
+                  id="Skills"
+                  onclick="openTab('skills', 'Skills')"
+                >
+                  Skills
+                </p>
+                <p
+                  class="tab-links"
+                  id="Experience"
+                  onclick="openTab('experience', 'Experience')"
+                >
+                  Experience
+                </p>
+                <p
+                  class="tab-links"
+                  id="Educations"
+                  onclick="openTab('educations', 'Educations')"
+                >
+                  Educations
+                </p>
+              </div>
+              <div class="tab-content active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span>Programming language</span><br />C/C++, javaScript,
+                    Python
+                  </li>
+                  <li>
+                    <span>Technologies</span><br />HTML5, CSS, Git/GitHub, Data
+                    Science
+                  </li>
+                  <li>
+                    <span>FrameWork&Library's</span><br />BootStrap, Numpy,
+                    pandas,matplotlib, Reactjs
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content" id="experience">
+                <ul>
+                  <li>
+                    <span>CRP training at ABES Engineering College</span
+                    ><br />(july 2023 - Aug 2023)
+                  </li>
+                  <li>
+                    <span>CodeSoft.( web development intern )</span><br />(Aug
+                    2023 - sept 2023)
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content" id="educations">
+                <ul>
+                  <li>
+                    <span>Class Xth(CBSE) - PN National Public School</span
+                    ><br />(2016)
+                  </li>
+                  <li>
+                    <span>Class XII(CBSE) - Centeral Public School</span
+                    ><br />(2016 - 2018)
+                  </li>
+                  <li>
+                    <span>B.Tech ABES Engineering College</span><br />(2020 -
+                    2024)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <!----------------------------------Portfolio------------------------------>
 
-
-
-        <!----------------------------Contact----------------->
-        <div id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h1 class="sub-tittle">Contact Me</h1>
-                        <p><i class="fa-solid fa-envelope"></i>nitinsinghs273@gmail.com</p>
-                        <p><i class="fa-solid fa-phone"></i>+91 9161652584</p>
-                        <div class="social-media">
-                            <a href="https://www.facebook.com/nitinsingh.rathaurnaggvansi/"><i
-                                    class="fa-brands fa-square-facebook"></i></a>
-                            <a href="https://twitter.com/NitinSi67246579"><i
-                                    class="fa-brands fa-square-x-twitter"></i></a>
-                            <a href="https://instagram.com/_nitinsinghs273?igshid=OGQ5ZDc2ODk2ZA=="><i
-                                    class="fa-brands fa-square-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/nitinsinghs273/"><i
-                                    class="fa-brands fa-linkedin"></i></a>
-                        </div>
-                        <a href="./img/NitinSingh_Resume.pdf" download class="btn btn2">Download CV</a>
-                    </div>
-                    <div class="contact-right">
-                        <form action="" name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="7" placeholder="Write Your Message"></textarea>
-                            <button type="submit" class="btn btn2">Submit</button>
-                        </form>
-                        <div id="msg">
-
-                        </div>
-                    </div>
-
-                </div>
+      <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">Projects</h1>
+          <div class="project-list">
+            <div class="project">
+              <img src="./img/Machine-Learning.png" alt="" />
+              <div class="layer">
+                <h3>Opinion Mining of Public Review</h3>
+                <p>
+                  This is Machine-Learning based Project which uses the the
+                  Comment of the public and catogries them into positive,
+                  negative and neutral comment based on the subjective and
+                  polarity of the Comment.
+                </p>
+                <a
+                  href="https://github.com/nitinsinghs273/Opinion-Mining-of-Public-Review-using-Sentiment-Analysis"
+                  ><i class="fa-solid fa-up-right-from-square"></i
+                ></a>
+              </div>
             </div>
-            <div class="copyright">
-                <p>copyright &copy Nitin made with Love <i class="fa-solid fa-heart"></i></p>
+            <div class="project">
+              <img src="./img/Project-2.png" alt="" />
+              <div class="layer">
+                <h3>Space Invaders - Game</h3>
+                <p>
+                  This is Python based project which uses Pygame Library. this
+                  is designed with simple logic in which the spacecraft can move
+                  X axis only and shoot the bullets and kill the aliens which
+                  can respawn again and again.
+                </p>
+                <a href="https://github.com/nitinsinghs273/Space_Invaders_Game"
+                  ><i class="fa-solid fa-up-right-from-square"></i
+                ></a>
+              </div>
             </div>
-
+            <div class="project">
+              <img src="./img/project-6.png" alt="" />
+              <div class="layer">
+                <h3>Employee Management App</h3>
+                <p>
+                  This is basic one page website which uses the Employees data
+                  into tables and which is deletable and editable. pagination is
+                  used to make sure 10 data is shown atmost at single time.
+                </p>
+                <a href="https://github.com/nitinsinghs273/Employee_Tabel_App2"
+                  ><i class="fa-solid fa-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <a
+            href="https://github.com/nitinsinghs273?tab=repositories"
+            class="btn"
+            >Explore..</a
+          >
         </div>
+      </div>
 
-
+      <!----------------------------Contact----------------->
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-tittle">Contact Me</h1>
+              <p>
+                <i class="fa-solid fa-envelope"></i>nitinsinghs273@gmail.com
+              </p>
+              <p><i class="fa-solid fa-phone"></i>+91 9161652584</p>
+              <div class="social-media">
+                <a href="https://www.facebook.com/nitinsingh.rathaurnaggvansi/"
+                  ><i class="fa-brands fa-square-facebook"></i
+                ></a>
+                <a href="https://twitter.com/NitinSi67246579"
+                  ><i class="fa-brands fa-square-x-twitter"></i
+                ></a>
+                <a
+                  href="https://instagram.com/_nitinsinghs273?igshid=OGQ5ZDc2ODk2ZA=="
+                  ><i class="fa-brands fa-square-instagram"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/nitinsinghs273/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+              <a href="./img/NitinSingh_Resume.pdf" download class="btn btn2"
+                >Download CV</a
+              >
+            </div>
+            <div class="contact-right">
+              <form action="" name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="7"
+                  placeholder="Write Your Message"
+                ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <div id="msg"></div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            copyright &copy Nitin made with Love
+            <i class="fa-solid fa-heart"></i>
+          </p>
+        </div>
+      </div>
     </div>
-    <script>
-
-    </script>
+    <script></script>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
